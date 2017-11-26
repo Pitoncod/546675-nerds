@@ -3,57 +3,56 @@
   <head>
     <meta charset="utf-8">
     <title>DESIGN STUDIO</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
       <nav class="main-navigation">
         <a class="main-header-logo">
-          <img src="img/index-logo.png" width=" " height=" " alt="Логотип NERS">
+          <img src="img/index-logo.svg" width="160" height="65" alt="Логотип NERS">
         </a>
         <ul class="site-navigation">
-          <li><a href="Studio.html">Студия</a></li>
-          <li><a href="the client.html">Клиенты</a></li>
+          <li><a href="studio.html">Студия</a></li>
+          <li><a href="client.html">Клиенты</a></li>
           <li><a href="catalog.html">Магазин</a></li>
           <li><a href="contacts.html">Контакты</a></li>
         </ul>
         <ul class="cart-navigation">
           <li><a class="cart" href="cart.html">Корзина</a></li>
         </ul>
-        <div class="slider">
-          <input type="radio" id="start slider1" name="swithch_slider" checked>
-          <input type="radio" id="start slider2" name="swithch_slider">
-          <input type="radio" id="start slider3" name="swithch_slider">
-          <div class="slider-controls">
-            <label for="start slider1"></label>
-            <label for="start slider2"></label>
-            <label for="start slider3"></label>
-          </div>
-          <div class="slides">
-            <div class="slides-item">
-              <div class="slides-item-content">
-                <b class="slides-item-title">Долго, дорого, скрупулезно</b>
-                <p class="slides-item-text">Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
-                <a class="button" href="precision.html">Узнать больше</a>
-              </div>
-            </div>
-            <div class="slides-item">
-              <div class="slides-item-content">
-                <b class="slides-item-title">Любим математику как никто другой</b>
-                <p class="slides-item-text wide-text">Никакого креатива, только математические формулы<br> для расчета идеальных пропорций.</p>
-                <a class="button" href="creative.html">Узнать больше</a>
-              </div>
-            </div>
-            <div class="slides-item">
-              <div class="slides-item-content">
-                <b class="slides-item-title">Только ночь, только хардкор</b>
-                <p class="slides-item-text">Работать днем, как все? Мы против этого.<br> Ближе к полуночи работа только начинается.</p>
-                <a class="button" href="diligence.html">Узнать больше</a>
-              </div>
-            </div>
-          </div>
-        </div>
       </nav>
     </header>
+    <section class="slider">
+      <div class="container">
+        <h2 class="visually-hidden">Преимущества</h2>
+        <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
+        <input class="visually-hidden" type="radio" id="product-2" name="toggle">
+        <input class="visually-hidden" type="radio" id="product-3" name="toggle">
+        <div class="slider-controls">
+          <label class="slider-controls-item slider-controls-item--1" for="product-1"></label>
+          <label class="slider-controls-item slider-controls-item--2" for="product-2"></label>
+          <label class="slider-controls-item slider-controls-item--3" for="product-3"></label>
+        </div>
+        <ul class="slider-list">
+          <li class="slider-item">
+            <h3>Долго, дорого,<br> скрупулезно.</h3>
+            <p>Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
+            <a class="slider-item-button button" href="#">Узнать больше</a>
+          </li>
+          <li class="slider-item">
+            <h3>Любим математику как никто другой</h3>
+            <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+            <a class="slider-item-button button" href="#">Узнать больше</a>
+          </li>
+          <li class="slider-item">
+            <h3>Только ночь,<br> только хардкор</h3>
+            <p>Работать днем, как все? Мы против этого.<br> Ближе к полуночи работа только начинается.</p>
+            <a class="slider-item-button button" href="#">Узнать больше</a>
+          </li>
+        </ul>
+      </div>
+    </section>
     <main class="container">
       <h1 class="visually-hidden">Nerds дизайн-студия</h1>
       <section class="services">
@@ -79,22 +78,22 @@
           </li>
         </ul>
       </section>
-      <section class="about the company">
+      <section class="about_company company">
         <h2 class="visually-hidden">О компании</h2>
-        <b class="about the company-title">Мы - маленькая, но гордая дизайн-студия
+        <b class="about_company-title">Мы - маленькая, но гордая дизайн-студия
         из Краснодара</b>
-        <p class="about the company-text">Исповедуем принципы минимализма и
+        <p class="about_company-text">Исповедуем принципы минимализма и
         чистоты. Ставим математический расчёт превыше креатива. Работаем не покладая рук, как роботы.</p>
-        <b class="about the company-orders">Выполняем заказы на разработку:</b>
-        <ul class="about the company-orders-list">
-          <li class="about the company-orders-item">Веб-сайтов любой сложности</li>
-          <li class="about the company-orders-item">Мобильных приложений для IOS и Android</li>
-          <li class="about the company-orders-item">Слайдшоу и видео для корпоративных презентаций</li>
+        <b class="about_company-orders">Выполняем заказы на разработку:</b>
+        <ul class="about_company-orders-list">
+          <li class="about_company-orders-item">Веб-сайтов любой сложности</li>
+          <li class="about_company-orders-item">Мобильных приложений для IOS и Android</li>
+          <li class="about_company-orders-item">Слайдшоу и видео для корпоративных презентаций</li>
         </ul>
       </section>
       <section class="Achievements">
         <figure class="Foundation-logo">
-          <img src="img/nerds-large logo.jpg" width="" height="" alt="Дизайн-студия Nerds">
+          <img src="img/nerds-illustration.png" width="360" height="208" alt="Дизайн-студия Nerds">
         </figure>
         <b class="Achievements-title">С 2004 года любим точность во всем:</b>
         <ul class="Achievements-list">
@@ -113,23 +112,23 @@
         <h2 class="visually-hidden">Наши партнеры</h2>
         <ul class="partners-list">
           <li class="partners-item">
-            <a class="partners-link" href="https://htmlacademy.ru" title="HTML Academy">
-              <img src="img/html-academy-logo.png" width="" height="" alt="HTML Academy">
+            <a class="partners-link" href="https://htmlacademy.ru/intensive/htmlcss" title="HTML Academy">
+              <img src="img/logo-1.png" width="199" height="68" alt="HTML Academy">
             </a>
           </li>
           <li class="partners-item">
-            <a class="partners-link" href="https://htmlacademy.ru" title="Barbershop Borodinski">
-              <img src="img/barbershop-borodinski.png" width="" height="" alt="Pink">
+            <a class="partners-link" href="#" title="Barbershop borodinski">
+              <img src="img/logo-2.png" width="209" height="90" alt="Barbershop-borodinski">
             </a>
           </li>
           <li class="partners-item">
-            <a class="partners-link" href="https://htmlacademy.ru" title="Pink">
-              <img src="img/Pink.png" width="" height="" alt="Pink">
+            <a class="partners-link" href="#" title="Pink">
+              <img src="img/logo-3.png" width="185" height="52" alt="Pink">
             </a>
           </li>
           <li class="partners-item">
-            <a class="partners-link" href="https://htmlacademy.ru" title="Mishka">
-              <img src="img/Mishka.png" width="" height="" alt="Mishka">
+            <a class="partners-link" href="#" title="Mishka">
+              <img src="img/logo-4.png" width="173" height="84" alt="Mishka">
             </a>
           </li>
         </ul>
@@ -160,10 +159,9 @@
 
     </footer>
     <section class="modal-content">
-      <h2 class="visually-hidden">Напишите нам</h2>
       <b class="modal-content-title">Напишите нам</b>
       <!--Здесь было место под форму-->
-      <form class="modal-content-form" action="https^//echo.htmlacademy.ru" method="POST">
+      <form class="modal-content-form" action="https://echo.htmlacademy.ru" method="POST">
         <p>
           <label class="label-name" for="name">Ваше имя:
             <input type="text" name="name" id="name" placeholder="Представтесь, пожалуйста" required></label>
